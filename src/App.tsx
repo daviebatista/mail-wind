@@ -2,8 +2,11 @@ import Header from './components/Header'
 import Container from './components/Container'
 import Sidebar from './components/Sidebar'
 import Bottombar from './components/BottomBar'
+import { useState } from 'react'
+import EmailList from './components/EmailList'
 
 function App() {
+  const [openEmail, setOpenEmail] = useState(null)
 
   return (
     <>
@@ -11,9 +14,8 @@ function App() {
         <Container>
           <div className='flex flex-col md:flex-row gap-2 xl:gap-4 h-full relative'>
             <Sidebar/>
-              <div className='h-96'>
-                <h1 className='text-center text-4xl'>Let's test you, Tailwind!</h1>
-              </div>
+            <EmailList setOpenEmail={setOpenEmail} />
+            {JSON.stringify(openEmail)}
               <Bottombar/>
           </div>
         </Container>
