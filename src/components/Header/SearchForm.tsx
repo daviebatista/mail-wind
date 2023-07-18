@@ -9,7 +9,7 @@ export default function SearchForm()    {
         >
             <input 
                 className='
-                    min-w-0 w-full p-2 rounded-l-lg border-2 border-transparent
+                    min-w-0 w-full p-2 rounded-l-lg border-[1px] border-transparent
                     bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-50
                     focus:outline-none focus:border-emerald-400 transition-colors
                 '
