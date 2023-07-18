@@ -12,7 +12,7 @@ export default function Sidebar () {
                 <FiEdit3 className={inlineIcon} />
                 Escrever
             </WriteButton>
-            <Button className="active">
+            <Button active>
                 <FiInbox  className={inlineIcon} />
                 Caixa de Entrada
             </Button>

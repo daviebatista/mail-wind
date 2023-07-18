@@ -9,6 +9,11 @@ export default function Logo()    {
                 "
         >
             <img 
+                className="
+                    hover:translate-x-0.5
+                    cursor-pointer
+                    transition-all
+                "
                 src="/mailwind-logo.png" 
                 alt="mailwind"
                 height={38}
