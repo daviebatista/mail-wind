@@ -10,6 +10,6 @@ export default {
   plugins: [
     require('tailwind-scrollbar')
   ],
-  darkMode: "class"
+  darkMode: "media"
 }
 

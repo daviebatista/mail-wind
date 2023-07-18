@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar'
 import Bottombar from './components/BottomBar'
 import { useState } from 'react'
 import EmailList from './components/EmailList'
+import EmailSubject from './components/EmailList/EmailSubject'
 
 function App() {
   const [openEmail, setOpenEmail] = useState(null)
@@ -15,8 +16,8 @@ function App() {
           <div className='flex flex-col md:flex-row gap-2 xl:gap-4 h-full relative'>
             <Sidebar/>
             <EmailList setOpenEmail={setOpenEmail} />
-            {JSON.stringify(openEmail)}
-              <Bottombar/>
+            <Bottombar/>
+            {openEmail && <EmailSubject setOpenEmail={setOpenEmail} email={openEmail}/>}
           </div>
         </Container>
     </>
